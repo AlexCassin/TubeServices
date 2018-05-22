@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9601E503-4C4D-4E9D-9147-F49E9E9BF118}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TubeServicea.Droid</RootNamespace>
+    <AssemblyName>TubeServicea.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bad_icon.png" />
+    <AndroidResource Include="Resources\drawable\good_icon.png" />
+    <AndroidResource Include="Resources\drawable\good_icon2x.png" />
+    <AndroidResource Include="Resources\drawable\good_icon3x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\good_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\good_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\good_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\good_icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\good_icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\bad_icon.png" />
+    <AndroidResource Include="Resources\drawable\bad_icon2x.png" />
+    <AndroidResource Include="Resources\drawable\bad_icon3x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bad_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bad_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bad_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bad_icon.png" />
+    <None Include="Assets\Fonts\.DS_Store" />
+    <Content Include="Assets\Fonts\Roboto-Bold.ttf" />
+    <Content Include="Assets\Fonts\Roboto-Regular.ttf" />
+    <None Include="Assets\Lines\.DS_Store" />
+    <None Include="Assets\Lines\Bakerloo\.DS_Store" />
+    <None Include="Assets\Lines\Central\.DS_Store" />
+    <None Include="Assets\Lines\Circle\.DS_Store" />
+    <None Include="Assets\Lines\District\.DS_Store" />
+    <None Include="Assets\Lines\DLR\.DS_Store" />
+    <None Include="Assets\Lines\H%27smith &amp; city\.DS_Store" />
+    <None Include="Assets\Lines\Jubilee\.DS_Store" />
+    <None Include="Assets\Lines\London overground\.DS_Store" />
+    <None Include="Assets\Lines\Metropolitan\.DS_Store" />
+    <None Include="Assets\Lines\Northen\.DS_Store" />
+    <None Include="Assets\Lines\Picadilly\.DS_Store" />
+    <None Include="Assets\Lines\TFL rail\.DS_Store" />
+    <None Include="Assets\Lines\Tram\.DS_Store" />
+    <None Include="Assets\Lines\Victoria\.DS_Store" />
+    <None Include="Assets\Lines\Waterloo &amp; city\.DS_Store" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Lines\Bakerloo\Bakerloo%402x.png" />
+    <Content Include="Assets\Lines\Bakerloo\Bakerloo%403x.png" />
+    <Content Include="Assets\Lines\Bakerloo\Bakerloo.png" />
+    <Content Include="Assets\Lines\Central\Central%402x.png" />
+    <Content Include="Assets\Lines\Central\Central%403x.png" />
+    <Content Include="Assets\Lines\Central\Central.png" />
+    <Content Include="Assets\Lines\Circle\Circle%402x.png" />
+    <Content Include="Assets\Lines\Circle\Circle%403x.png" />
+    <Content Include="Assets\Lines\Circle\Circle.png" />
+    <Content Include="Assets\Lines\District\District%402x.png" />
+    <Content Include="Assets\Lines\District\District%403x.png" />
+    <Content Include="Assets\Lines\District\District.png" />
+    <Content Include="Assets\Lines\DLR\DLR%402x.png" />
+    <Content Include="Assets\Lines\DLR\DLR%403x.png" />
+    <Content Include="Assets\Lines\DLR\DLR.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\hdpi\Line\H’smith &amp; City.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\H’smith &amp; City%402x.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\H’smith &amp; City%403x.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\H’smith &amp; City.png" />
+    <Content Include="Assets\Lines\Jubilee\hdpi\Line\Jubilee.png" />
+    <Content Include="Assets\Lines\Jubilee\Jubilee%402x.png" />
+    <Content Include="Assets\Lines\Jubilee\Jubilee%403x.png" />
+    <Content Include="Assets\Lines\Jubilee\Jubilee.png" />
+    <Content Include="Assets\Lines\London overground\hdpi\Line\London overground.png" />
+    <Content Include="Assets\Lines\London overground\London overground%402x.png" />
+    <Content Include="Assets\Lines\London overground\London overground%403x.png" />
+    <Content Include="Assets\Lines\London overground\London overground.png" />
+    <Content Include="Assets\Lines\Metropolitan\hdpi\Line\Metropolitan.png" />
+    <Content Include="Assets\Lines\Metropolitan\mdpi\Line\Metropolitan.png" />
+    <Content Include="Assets\Lines\Metropolitan\Metropolitan%402x.png" />
+    <Content Include="Assets\Lines\Metropolitan\Metropolitan%403x.png" />
+    <Content Include="Assets\Lines\Metropolitan\Metropolitan.png" />
+    <Content Include="Assets\Lines\Northen\hdpi\Line\Northen.png" />
+    <Content Include="Assets\Lines\Northen\mdpi\Line\Northen.png" />
+    <Content Include="Assets\Lines\Northen\Northen%402x.png" />
+    <Content Include="Assets\Lines\Northen\Northen%403x.png" />
+    <Content Include="Assets\Lines\Northen\Northen.png" />
+    <Content Include="Assets\Lines\Picadilly\hdpi\Line\Picadilly.png" />
+    <Content Include="Assets\Lines\Picadilly\mdpi\Line\Picadilly.png" />
+    <Content Include="Assets\Lines\Picadilly\Picadilly%402x.png" />
+    <Content Include="Assets\Lines\Picadilly\Picadilly%403x.png" />
+    <Content Include="Assets\Lines\Picadilly\Picadilly.png" />
+    <Content Include="Assets\Lines\TFL rail\hdpi\Line\TfL raill.png" />
+    <Content Include="Assets\Lines\TFL rail\mdpi\Line\TfL raill.png" />
+    <Content Include="Assets\Lines\TFL rail\TfL raill%402x.png" />
+    <Content Include="Assets\Lines\TFL rail\TfL raill%403x.png" />
+    <Content Include="Assets\Lines\TFL rail\TfL raill.png" />
+    <Content Include="Assets\Lines\Tram\hdpi\Line\Tram link.png" />
+    <Content Include="Assets\Lines\Tram\mdpi\Line\Tram link.png" />
+    <Content Include="Assets\Lines\Tram\Tram link%402x.png" />
+    <Content Include="Assets\Lines\Tram\Tram link%403x.png" />
+    <Content Include="Assets\Lines\Tram\Tram link.png" />
+    <Content Include="Assets\Lines\Victoria\hdpi\Line\Victoria.png" />
+    <Content Include="Assets\Lines\Victoria\mdpi\Line\Victoria.png" />
+    <Content Include="Assets\Lines\Victoria\Victoria%402x.png" />
+    <Content Include="Assets\Lines\Victoria\Victoria%403x.png" />
+    <Content Include="Assets\Lines\Victoria\Victoria.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\hdpi\Line\Waterloo &amp; city.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\mdpi\Line\Waterloo &amp; city.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\Waterloo &amp; city%402x.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\Waterloo &amp; city%403x.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\Waterloo &amp; city.png" />
+    <None Include="Assets\Lines\Waterloo &amp; city\Waterloo &amp; city.svg" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\xhdpi\Line\Waterloo &amp; city.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\xxhdpi\Line\Waterloo &amp; city.png" />
+    <Content Include="Assets\Lines\Waterloo &amp; city\xxxhdpi\Line\Waterloo &amp; city.png" />
+    <None Include="Assets\Lines\Victoria\Victoria.svg" />
+    <Content Include="Assets\Lines\Victoria\xhdpi\Line\Victoria.png" />
+    <Content Include="Assets\Lines\Victoria\xxhdpi\Line\Victoria.png" />
+    <Content Include="Assets\Lines\Victoria\xxxhdpi\Line\Victoria.png" />
+    <None Include="Assets\Lines\Tram\Tram link.svg" />
+    <Content Include="Assets\Lines\Tram\xhdpi\Line\Tram link.png" />
+    <Content Include="Assets\Lines\Tram\xxhdpi\Line\Tram link.png" />
+    <Content Include="Assets\Lines\Tram\xxxhdpi\Line\Tram link.png" />
+    <None Include="Assets\Lines\TFL rail\TfL raill.svg" />
+    <Content Include="Assets\Lines\TFL rail\xhdpi\Line\TfL raill.png" />
+    <Content Include="Assets\Lines\TFL rail\xxhdpi\Line\TfL raill.png" />
+    <Content Include="Assets\Lines\TFL rail\xxxhdpi\Line\TfL raill.png" />
+    <None Include="Assets\Lines\Picadilly\Picadilly.svg" />
+    <Content Include="Assets\Lines\Picadilly\xhdpi\Line\Picadilly.png" />
+    <Content Include="Assets\Lines\Picadilly\xxhdpi\Line\Picadilly.png" />
+    <Content Include="Assets\Lines\Picadilly\xxxhdpi\Line\Picadilly.png" />
+    <None Include="Assets\Lines\Northen\Northen.svg" />
+    <Content Include="Assets\Lines\Northen\xhdpi\Line\Northen.png" />
+    <Content Include="Assets\Lines\Northen\xxhdpi\Line\Northen.png" />
+    <Content Include="Assets\Lines\Northen\xxxhdpi\Line\Northen.png" />
+    <None Include="Assets\Lines\Metropolitan\Metropolitan.svg" />
+    <Content Include="Assets\Lines\Metropolitan\xhdpi\Line\Metropolitan.png" />
+    <Content Include="Assets\Lines\Metropolitan\xxhdpi\Line\Metropolitan.png" />
+    <Content Include="Assets\Lines\Metropolitan\xxxhdpi\Line\Metropolitan.png" />
+    <None Include="Assets\Lines\London overground\London overground.svg" />
+    <Content Include="Assets\Lines\London overground\mdpi\Line\London overground.png" />
+    <Content Include="Assets\Lines\London overground\xhdpi\Line\London overground.png" />
+    <Content Include="Assets\Lines\London overground\xxhdpi\Line\London overground.png" />
+    <Content Include="Assets\Lines\London overground\xxxhdpi\Line\London overground.png" />
+    <None Include="Assets\Lines\Jubilee\Jubilee.svg" />
+    <Content Include="Assets\Lines\Jubilee\mdpi\Line\Jubilee.png" />
+    <Content Include="Assets\Lines\Jubilee\xhdpi\Line\Jubilee.png" />
+    <Content Include="Assets\Lines\Jubilee\xxhdpi\Line\Jubilee.png" />
+    <Content Include="Assets\Lines\Jubilee\xxxhdpi\Line\Jubilee.png" />
+    <None Include="Assets\Lines\H%27smith &amp; city\H’smith &amp; City.svg" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\mdpi\Line\H’smith &amp; City.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\xhdpi\Line\H’smith &amp; City.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\xxhdpi\Line\H’smith &amp; City.png" />
+    <Content Include="Assets\Lines\H%27smith &amp; city\xxxhdpi\Line\H’smith &amp; City.png" />
+    <None Include="Assets\Lines\DLR\DLR.svg" />
+    <Content Include="Assets\Lines\DLR\hdpi\Line\DLR.png" />
+    <Content Include="Assets\Lines\DLR\mdpi\Line\DLR.png" />
+    <Content Include="Assets\Lines\DLR\xhdpi\Line\DLR.png" />
+    <Content Include="Assets\Lines\DLR\xxhdpi\Line\DLR.png" />
+    <Content Include="Assets\Lines\DLR\xxxhdpi\Line\DLR.png" />
+    <None Include="Assets\Lines\District\District.svg" />
+    <Content Include="Assets\Lines\District\hdpi\Line\District.png" />
+    <Content Include="Assets\Lines\District\mdpi\Line\District.png" />
+    <Content Include="Assets\Lines\District\xhdpi\Line\District.png" />
+    <Content Include="Assets\Lines\District\xxhdpi\Line\District.png" />
+    <Content Include="Assets\Lines\District\xxxhdpi\Line\District.png" />
+    <None Include="Assets\Lines\Circle\Circle.svg" />
+    <Content Include="Assets\Lines\Circle\hdpi\Line\Circle.png" />
+    <Content Include="Assets\Lines\Circle\mdpi\Line\Circle.png" />
+    <Content Include="Assets\Lines\Circle\xhdpi\Line\Circle.png" />
+    <Content Include="Assets\Lines\Circle\xxhdpi\Line\Circle.png" />
+    <Content Include="Assets\Lines\Circle\xxxhdpi\Line\Circle.png" />
+    <None Include="Assets\Lines\Central\Central.svg" />
+    <Content Include="Assets\Lines\Central\hdpi\Line\Central.png" />
+    <Content Include="Assets\Lines\Central\mdpi\Line\Central.png" />
+    <Content Include="Assets\Lines\Central\xhdpi\Line\Central.png" />
+    <Content Include="Assets\Lines\Central\xxhdpi\Line\Central.png" />
+    <Content Include="Assets\Lines\Central\xxxhdpi\Line\Central.png" />
+    <None Include="Assets\Lines\Bakerloo\Bakerloo.svg" />
+    <Content Include="Assets\Lines\Bakerloo\hdpi\Line\Bakerloo.png" />
+    <Content Include="Assets\Lines\Bakerloo\mdpi\Line\Bakerloo.png" />
+    <Content Include="Assets\Lines\Bakerloo\xhdpi\Line\Bakerloo.png" />
+    <Content Include="Assets\Lines\Bakerloo\xxhdpi\Line\Bakerloo.png" />
+    <Content Include="Assets\Lines\Bakerloo\xxxhdpi\Line\Bakerloo.png" />
+  </ItemGroup>
+  <Import Project="..\TubeServicea\TubeServicea.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
